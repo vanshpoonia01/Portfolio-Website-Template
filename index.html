@@ -42,7 +42,7 @@
   width: 160px;
   height: 160px;
   border-radius: 50%;
-  overflow: hidden;        /* 🔥 hides extra body */
+  overflow: hidden;
   margin: auto;
   border: 3px solid #ffbd39;
 }
@@ -53,12 +53,14 @@
 
   object-fit: cover;
 
-  /* 🔥 MOVE FACE DOWN */
-  object-position: 50% 30%;
+  /* 🔥 MOVE FACE DOWN PROPERLY */
+  object-position: 50% 38%;
 
-  transform: scale(1.35);   /* slight zoom (not too much) */
+  /* 🔥 MORE ZOOM FOR CLEAR FACE */
+  transform: scale(1.6);
 
-  image-rendering: auto;
+  /* 🔥 IMPROVE SHARPNESS */
+  filter: contrast(1.05) brightness(1.05);
 }
 .overlay {
   background: none !important;
