@@ -50,17 +50,16 @@
 .profile-img {
   width: 100%;
   height: 100%;
-
   object-fit: cover;
 
-  /* 🔥 MOVE FACE DOWN PROPERLY */
-  object-position: 50% 38%;
+  /* ✅ MOVE IMAGE DOWN (this is the key) */
+  object-position: center 60%;
 
-  /* 🔥 MORE ZOOM FOR CLEAR FACE */
-  transform: scale(1.6);
+  /* ❌ REMOVE zoom */
+  transform: none;
 
-  /* 🔥 IMPROVE SHARPNESS */
-  filter: contrast(1.05) brightness(1.05);
+  /* ❌ REMOVE filters */
+  filter: none;
 }
 .overlay {
   background: none !important;
